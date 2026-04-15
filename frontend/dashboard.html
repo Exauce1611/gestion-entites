@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tableau de bord - Gestion Multi-Entités</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <header class="app-header">
+            <div class="header-left">
+                <h1>📊 Gestion Multi-Entités</h1>
+                <span class="user-badge" id="userRole"></span>
+            </div>
+            <div class="header-right">
+                <button id="logoutBtn" class="btn-logout">🚪 Déconnexion</button>
+            </div>
+        </header>
+        
+        <main class="app-main">
+            <div class="dashboard-header">
+                <h2>Tableau de bord</h2>
+                <p id="currentDate"></p>
+            </div>
+            
+            <div class="entities-grid" id="entitiesGrid">
+                <div class="loading">Chargement des entités...</div>
+            </div>
+            
+            <div class="recent-section">
+                <h3>📋 Dernières opérations</h3>
+                <div class="table-container">
+                    <table id="recentTransactions">
+                        <thead>
+                            <tr><th>Date</th><th>Entité</th><th>Type</th><th>Montant</th><th>Description</th></tr>
+                        </thead>
+                        <tbody id="recentTransactionsBody">
+                            <tr><td colspan="5">Chargement...</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

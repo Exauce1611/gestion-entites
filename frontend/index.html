@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion Multi-Entités - Connexion</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="login-page">
+    <div class="login-container">
+        <div class="login-card">
+            <div class="login-header">
+                <h1>📊 Gestion Multi-Entités</h1>
+                <p>Entrées / Sorties</p>
+            </div>
+            
+            <form id="loginForm">
+                <div class="form-group">
+                    <label>Identifiant</label>
+                    <input type="text" id="username" placeholder="gerant ou admin" required>
+                </div>
+                
+                <div class="form-group">
+                    <label>Mot de passe</label>
+                    <input type="password" id="password" placeholder="••••••" required>
+                </div>
+                
+                <button type="submit" class="btn-primary">Se connecter</button>
+                
+                <div id="errorMessage" class="error-message" style="display:none"></div>
+            </form>
+            
+            <div class="login-footer">
+                <small>© 2026 - Application sécurisée</small>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
